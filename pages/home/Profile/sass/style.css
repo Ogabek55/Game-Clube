@@ -78,14 +78,6 @@ header {
   width: 17px;
 }
 
-.header-menu li a img {
-  transition: 0.3s;
-}
-
-.header-menu li a img:hover {
-  padding-left: 10px;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -225,13 +217,12 @@ aside {
   border-left: 1px solid #fff;
   display: flex;
   flex-direction: column;
-  line-height: 22px;
 }
 .following h1,
 .suporters h1 {
   font-size: 18px;
   color: #fff;
-  align-self: center;
+  text-align: center;
 }
 .following span,
 .suporters span {
@@ -243,6 +234,7 @@ aside {
 .followers h1 {
   font-size: 18px;
   color: #fff;
+  text-align: center;
 }
 .followers span {
   font-size: 11px;
@@ -269,16 +261,38 @@ aside {
   position: absolute;
   border: 8px solid rgb(26, 28, 38);
   z-index: 1;
-  right: 40px;
+  right: 60px;
   top: -47px;
+}
+
+.about-user {
+  margin-top: -15px;
+  right: 60px;
+  position: relative;
+}
+.about-user h1 {
+  width: 500px;
+}
+
+.foll__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .followers,
 .following,
 .suporters {
-  width: 80px;
+  width: 140px;
   height: 50px;
-  margin-top: 20px;
+  line-height: 28px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.followers span,
+.following span,
+.suporters span {
+  text-align: center;
 }
 
 .profile-img img {
@@ -291,4 +305,12 @@ aside {
   line-height: 18.7px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.flw-btn {
+  display: flex;
+}
+
+.dagre-of-lvl {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
