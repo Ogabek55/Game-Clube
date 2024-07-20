@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    background-color:#1A1C26;
+}
+.project_container {
+    max-width: 1350px;
+    width:100%;
+    margin:auto;
+    }
+button{
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header_h1{
+    font-family: "Bakbak One", sans-serif;
+    font-size: 30px;
+    font-weight: 400px;
+    line-height: 38px;
+    text-align: left;
+    color: white;
+}
+.header_button{
+    width: 119px;
+    height: 38px;
+    color: #E3E3E3;
+    gap: 0px;
+    border-radius: 6px;
+    border: 1px solid;
+    opacity: 0px;
+    background-color: #1A1C26;
+    
+}
+.fa-filter{
+    width: 13px;
+    height: 13px;
+    gap: 0px;
+    opacity: 0px;
+    color: #E3E3E3;
+}
+header{
+    width: 126px;
+    height: 1024px;
+    gap: 0px;
+    opacity: 0px;
+    background-color:#272932;    
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0;
+  }
+  ul li {
+    list-style: none;
+  }
+  header {
+    width: 126px;
+    height: 100vh;
+    background-color: #272932;
+  }
+  .logo__wrapper {
+      padding-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .header-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .logo__wrapper a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Bakbak One", sans-serif;
+  }
+  .logout{
+      width: 40%;
+      padding-top: 35px;
+      border-top: 0.5px solid rgba(143, 143, 143, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+  }
+
+  .header-menu li a img{
+      transition: 0.3s;
+  }
+  .header-menu li a img:hover{
+      padding-left: 10px;
+  }
+  .project_carts{
+    margin-left: 45px;
+  }
+ 

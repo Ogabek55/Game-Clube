@@ -1,0 +1,13 @@
+
+@media screen and (max-width: 1444px) {
+      .project{
+        width: 100%;
+        display: block;
+      }
+      .Elements_cart{
+        margin-top: 61px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+      }
+  }
