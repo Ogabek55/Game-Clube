@@ -42,6 +42,8 @@ header {
   width: 100px;
   height: 100vh;
   background-color: rgb(39, 41, 50);
+  position: sticky;
+  top: 1px;
 }
 
 .logo__wrapper {
@@ -86,6 +88,18 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+header {
+  height: 100vh;
+}
 header .container {
   display: flex;
   flex-direction: column;
@@ -249,8 +263,8 @@ aside {
 }
 
 .pr-img {
-  width: 131px;
-  height: 131px;
+  width: 141px;
+  height: 141px;
   position: relative;
 }
 
@@ -266,8 +280,8 @@ aside {
 }
 
 .about-user {
-  margin-top: -15px;
-  right: 60px;
+  margin-top: -35px;
+  right: 55px;
   position: relative;
 }
 .about-user h1 {
@@ -300,17 +314,194 @@ aside {
 }
 
 .profile-text {
-  width: 350px;
+  width: 360px;
   margin-top: 20px;
   line-height: 18.7px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.6);
 }
 
+.pr-name {
+  color: #fff;
+}
+
+.pr-link {
+  position: relative;
+}
+.pr-link a {
+  position: absolute;
+  text-decoration: none;
+  left: 25px;
+  top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .flw-btn {
+  width: 420px;
+  justify-content: space-between;
   display: flex;
+  margin-top: 60px;
+  margin-left: -145px;
+  margin-bottom: 20px;
+}
+.flw-btn button {
+  padding: 10px 30px;
+  border: 0;
+  background: linear-gradient(180deg, #7940cf 0%, #5921cb 100%);
+  border-radius: 6px;
+  color: #fff;
 }
 
 .dagre-of-lvl {
+  width: 100%;
+  padding: 160px 25px;
   display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.dagre-of-lvl .lvl {
+  color: #fff;
+}
+
+.dagre-btn__wrapper {
+  width: 700px;
+  height: 30px;
+  border-radius: 20px;
+  background: rgb(73, 58, 101);
+}
+.dagre-btn__wrapper button {
+  width: 80%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border: 0;
+  background: linear-gradient(90deg, #773fcf 0%, #5b23cb 100%);
+  border-bottom-left-radius: 20px;
+  padding-left: 470px;
+  color: rgb(255, 255, 255);
+}
+
+.pro-pass-btn button {
+  padding: 9px 13px;
+  border-radius: 6px;
+  color: #fff;
+  border: 1px solid rgb(226, 226, 226);
+  background-color: transparent;
+}
+
+.post-card__wrapper {
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: -130px;
+  background-color: rgb(39, 41, 50);
+}
+
+.content-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-btn {
+  display: flex;
+  gap: 47px;
+}
+
+.create-gig-btn {
+  width: 100px;
+  height: 33px;
+  border: 1px solid rgb(140, 103, 246);
+  color: rgb(140, 103, 246);
+  outline: none;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.nav-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 0 5px;
+  position: relative;
+  color: rgb(103, 105, 111);
+}
+
+.nav-button.active {
+  color: #5921cb;
+}
+
+.underline {
+  height: 2px;
+  background-color: #5921cb;
+  width: 0;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+}
+
+.underline.active {
+  width: 100%;
+}
+
+.content-1 {
+  margin-top: 30px;
+}
+
+.game-of-info {
+  display: flex;
+  gap: 20px;
+}
+
+.rectangle-img {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 23px;
+}
+.rectangle-img img {
+  width: 40px;
+}
+.rectangle-img p {
+  width: 694px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18.7px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.three-dote .fa-ellipsis {
+  color: #fff;
+}
+
+.main-img-of-contend {
+  position: relative;
+}
+.main-img-of-contend img {
+  margin-top: 20px;
+  width: 100%;
+}
+.main-img-of-contend button {
+  padding: 12px 28px;
+  border-radius: 6px;
+  border: 0;
+  background: rgb(27, 30, 40);
+  opacity: 65%;
+  color: #fff;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+}
+.main-img-of-contend button:hover {
+  opacity: 100%;
 }/*# sourceMappingURL=style.css.map */
