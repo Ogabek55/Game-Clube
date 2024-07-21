@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -18,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -154,49 +156,145 @@
               <button>Pro Pass</button>
             </div>
           </div>
-          <div class="post-card__wrapper">
-           
-              <div class="content-box">
-                <div class="content-btn">
-                  <button class="nav-button active" data-tab="tab1">
-                    <i class="fa-solid fa-image"></i> POSTS
-                    <div class="underline active"></div>
-                  </button>
-                  <button class="nav-button" data-tab="tab2">
-                    <i class="fa-solid fa-bookmark"></i> GIGS
-                    <div class="underline"></div>
-                  </button>
-                </div>
-                <button class="create-gig-btn">Create Gig</button>
+          <div
+            class="post-card__wrapper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div class="content-box">
+              <div class="content-btn">
+                <button class="nav-button active" data-tab="tab1">
+                  <i class="fa-solid fa-image"></i> POSTS
+                  <div class="underline active"></div>
+                </button>
+                <button class="nav-button" data-tab="tab2">
+                  <i class="fa-solid fa-bookmark"></i> GIGS
+                  <div class="underline"></div>
+                </button>
               </div>
+              <button class="create-gig-btn">Create Gig</button>
+            </div>
             <div id="tab1" class="tab active">
               <div class="content-1">
                 <div class="rectangle-img">
-                <div class="game-of-info">
-                  <img src="../../../images/Rectangle 6368.svg" alt="">
-                  <p>What you need to do for this is very simple. Register and click the Become a Creator button. Making money is not far off. Come on, be a creator.</p>
-                </div>
+                  <div class="game-of-info">
+                    <img src="../../../images/Rectangle 6368.svg" alt="" />
+                    <p>
+                      What you need to do for this is very simple. Register and
+                      click the Become a Creator button. Making money is not far
+                      off. Come on, be a creator.
+                    </p>
+                  </div>
                   <div class="three-dote">
                     <i class="fa-solid fa-ellipsis"></i>
                   </div>
                 </div>
                 <div class="main-img-of-contend">
-                  <img src="./images/Mask Group.png" alt="">
+                  <img src="./images/Mask Group.png" alt="" />
                   <button>Valheim</button>
                 </div>
               </div>
             </div>
             <div id="tab2" class="tab">
-              <h1>Tab 2 Content</h1>
-              <p>This is the content of Tab 2.</p>
-            </div>
-            <div id="tab3" class="tab">
-              <h1>Tab 3 Content</h1>
-              <p>This is the content of Tab 3.</p>
+              <div class="contend-2__wrapper">
+                <div class="content-box-2">
+                  <div class="minecraft-img">
+                    <img src="./images/Minecraft.svg" alt="" />
+                  </div>
+                  <div class="about-minecraft">
+                    <div class="mincraft-icon">
+                      <img
+                        src="./images/minecraft-logo-5EAD3A1535-seeklogo 1.svg"
+                        alt=""
+                      />
+                      <h1>Minecraft</h1> <i class="fa-solid fa-star"></i><span>4.9</span><p>(25)</p>
+                    </div>
+                    <div class="game-text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.  Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni ad minim veniam.</p>
+                    </div>
+                    <div class="price-box-and-order-btn">
+                      <h1>Starting at $20</h1>
+                      <button>Order</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="view-count__wrapper">
+                  <div class="title-count">
+                    <h1>View count</h1><i class="fa-solid fa-star"></i><span>4.9</span><p>(25)</p>
+                  </div>
+                  <div class="stars__wrapper">
+                    <div class="response-time">
+                      <h1>Responce time</h1>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i> <span>5.1</span>
+                    </div>
+                    <div class="friendliness">
+                      <h1>Friendliness</h1>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i> <span>5.1</span>
+                    </div>
+                    <div class="performance">
+                      <h1>Performance</h1>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i> <span>5.1</span>
+                    </div>
+                    <div class="satisfaction">
+                      <h1>Satisfaction</h1>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i> <span>5.1</span>
+                    </div>
+                  </div>
+                  <div class="account__wrapper">
+                   <div class="acc__box">
+                    <div class="accoun-circle-box">
+                      <h1>M</h1>
+                    </div>
+                    <div class="acc-name">
+                      <h1>mel23</h1>
+                      <div class="acc-star">
+                        <i class="fa-solid fa-star"></i> <span>3.4</span>
+                      </div>
+                    </div>
+                   </div>
+                    <div class="acc-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus ad, quidem vitae veniam tenetur cumque culpa doloribus! Ratione animi a quis culpa error sequi et at quam vitae nihil.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <aside></aside>
+        <aside>
+          <div class="altersky__wrapper">
+            <div class="aside__titile">
+              <h1>ALTERSKY</h1>
+            </div>
+            <div class="coin-img__wrapper">
+              <img src="./images/coin.svg" alt="">
+              <div class="order-pass-btn__wrapper">
+                <div class="order-box">
+                  <button>Order</button>
+                </div>
+                <div class="pass-btn">
+                  <button>ProPass</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
     <script src="./tap.js"></script>

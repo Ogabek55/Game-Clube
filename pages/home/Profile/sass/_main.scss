@@ -8,8 +8,8 @@ body {
 button {
   cursor: pointer;
 }
-header{
-    position: sticky;
+header {
+  position: sticky;
   top: 0;
 }
 header {
@@ -30,7 +30,7 @@ header {
 }
 .home-page {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   padding: 28px;
   background: #1a1c26;
 }
@@ -42,9 +42,8 @@ aside {
   width: 350px;
   height: 100vh;
   border-left: 1px solid #fff;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 0;
+  position: sticky;
+  top: 0;
   background: #1a1c26;
 }
 .profile__wrapper {
@@ -272,7 +271,7 @@ aside {
   width: 100%;
   padding: 20px;
   border-radius: 12px;
-  margin-top: -130px;
+  margin-top: -100px;
   background-color: rgba(39, 41, 50, 1);
 }
 .content-box {
@@ -324,14 +323,14 @@ aside {
 .content-1 {
   margin-top: 30px;
 }
-.game-of-info{
-    display: flex;
-    gap: 20px;
+.game-of-info {
+  display: flex;
+  gap: 20px;
 }
 .rectangle-img {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 23px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 23px;
   img {
     width: 40px;
   }
@@ -346,29 +345,215 @@ aside {
     color: rgba(255, 255, 255, 1);
   }
 }
-.three-dote{
-    .fa-ellipsis{
-        color: #fff;
-    }
+.three-dote {
+  .fa-ellipsis {
+    color: #fff;
+  }
 }
-.main-img-of-contend{
-    position: relative;
-    img{
-        margin-top: 20px;
-        width: 100%;
-    }
-    button{
-        padding: 12px 28px;
-        border-radius: 6px;
-        border: 0;
-        background: rgba(27, 30, 40, 1);
-        opacity: 65%;
-        color: #fff;
-        position: absolute;
-        top: 60px;
-        right: 50px;
-    }
-    button:hover{
-        opacity: 100%;
-    }
+.main-img-of-contend {
+  position: relative;
+  img {
+    margin-top: 20px;
+    width: 100%;
+  }
+  button {
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: 0;
+    background: rgba(27, 30, 40, 1);
+    opacity: 65%;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+  }
+  button:hover {
+    opacity: 100%;
+  }
+}
+.content-box-2 {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+.minecraft-img img {
+  height: 200px;
+}
+.mincraft-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .fa-star,
+  span {
+    color: rgba(228, 217, 109, 1);
+    font-size: 12px;
+  }
+  h1 {
+    color: #fff;
+    font-size: 15px;
+  }
+  span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  p {
+    margin-left: -5px;
+    font-size: 10px;
+    color: rgba(143, 143, 143, 1);
+  }
+}
+.game-text {
+  padding: 15px 0;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+}
+.price-box-and-order-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  h1 {
+    align-self: center;
+    color: #fff;
+  }
+  button {
+    padding: 7px 28px;
+    background: linear-gradient(180deg, #7940cf 0%, #5921cb 100%);
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+  }
+}
+.title-count {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  .fa-star,
+  span {
+    color: rgba(228, 217, 109, 1);
+    font-size: 12px;
+  }
+  h1 {
+    color: #fff;
+    font-size: 15px;
+  }
+  span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  p {
+    margin-top: 3px;
+    margin-left: -7px;
+    font-size: 10px;
+    color: rgba(143, 143, 143, 1);
+  }
+}
+.stars__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.response-time,
+.friendliness,
+.performance,
+.satisfaction {
+  padding: 20px 0;
+  h1 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 5px;
+  }
+  .fa-star {
+    font-size: 10px;
+    color: rgba(228, 217, 109, 1);
+  }
+  span {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(228, 217, 109, 1);
+  }
+}
+.account__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+.acc__box {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+.acc-name {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  .fa-star,
+  span {
+    color: rgba(228, 217, 109, 1);
+  }
+}
+.acc-star {
+  display: flex;
+  gap: 7px;
+}
+.acc-text {
+  width: 727px;
+  padding-right: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 17px;
+  text-align: left;
+}
+.accoun-circle-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(140, 103, 246, 0.44);
+  color: #fff;
+}
+.altersky__wrapper{
+  width: 100%;
+  height: 200px;
+  padding: 15px 20px;
+  border: 1px solid wheat;
+}
+.coin-img__wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.order-pass-btn__wrapper{
+  display: flex;
+}
+.order-box{
+  width: 70px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgba(255, 255, 255, 1);
+}
+.pass-btn{
+  width: 70px;
+  height: 40px;
+  padding-left: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

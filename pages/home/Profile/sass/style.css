@@ -118,7 +118,7 @@ header .container {
 
 .home-page {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   padding: 28px;
   background: #1a1c26;
 }
@@ -132,9 +132,8 @@ aside {
   width: 350px;
   height: 100vh;
   border-left: 1px solid #fff;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 0;
+  position: sticky;
+  top: 0;
   background: #1a1c26;
 }
 
@@ -393,7 +392,7 @@ aside {
   width: 100%;
   padding: 20px;
   border-radius: 12px;
-  margin-top: -130px;
+  margin-top: -100px;
   background-color: rgb(39, 41, 50);
 }
 
@@ -504,4 +503,218 @@ aside {
 }
 .main-img-of-contend button:hover {
   opacity: 100%;
+}
+
+.content-box-2 {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.minecraft-img img {
+  height: 200px;
+}
+
+.mincraft-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mincraft-icon .fa-star,
+.mincraft-icon span {
+  color: rgb(228, 217, 109);
+  font-size: 12px;
+}
+.mincraft-icon h1 {
+  color: #fff;
+  font-size: 15px;
+}
+.mincraft-icon span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.mincraft-icon p {
+  margin-left: -5px;
+  font-size: 10px;
+  color: rgb(143, 143, 143);
+}
+
+.game-text {
+  padding: 15px 0;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.price-box-and-order-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.price-box-and-order-btn h1 {
+  align-self: center;
+  color: #fff;
+}
+.price-box-and-order-btn button {
+  padding: 7px 28px;
+  background: linear-gradient(180deg, #7940cf 0%, #5921cb 100%);
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.title-count {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.title-count .fa-star,
+.title-count span {
+  color: rgb(228, 217, 109);
+  font-size: 12px;
+}
+.title-count h1 {
+  color: #fff;
+  font-size: 15px;
+}
+.title-count span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.title-count p {
+  margin-top: 3px;
+  margin-left: -7px;
+  font-size: 10px;
+  color: rgb(143, 143, 143);
+}
+
+.stars__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.response-time,
+.friendliness,
+.performance,
+.satisfaction {
+  padding: 20px 0;
+}
+.response-time h1,
+.friendliness h1,
+.performance h1,
+.satisfaction h1 {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 5px;
+}
+.response-time .fa-star,
+.friendliness .fa-star,
+.performance .fa-star,
+.satisfaction .fa-star {
+  font-size: 10px;
+  color: rgb(228, 217, 109);
+}
+.response-time span,
+.friendliness span,
+.performance span,
+.satisfaction span {
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  color: rgb(228, 217, 109);
+}
+
+.account__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+
+.acc__box {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.acc-name {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+}
+.acc-name .fa-star,
+.acc-name span {
+  color: rgb(228, 217, 109);
+}
+
+.acc-star {
+  display: flex;
+  gap: 7px;
+}
+
+.acc-text {
+  width: 727px;
+  padding-right: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 17px;
+  text-align: left;
+}
+
+.accoun-circle-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(140, 103, 246, 0.44);
+  color: #fff;
+}
+
+.altersky__wrapper {
+  width: 100%;
+  height: 200px;
+  padding: 15px 20px;
+  border: 1px solid wheat;
+}
+
+.coin-img__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.order-pass-btn__wrapper {
+  display: flex;
+}
+
+.order-box {
+  width: 70px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgb(255, 255, 255);
+}
+
+.pass-btn {
+  width: 70px;
+  height: 40px;
+  padding-left: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
