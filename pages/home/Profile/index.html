@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -44,7 +44,7 @@
               <a href=""><img src="../../../images/Game.svg" alt="" /></a>
             </li>
             <li>
-              <a href=""><img src="../../../images/Chart.svg" alt="" /></a>
+              <a href="../BunPal/inde.html"><img src="../../../images/Chart.svg" alt="" /></a>
             </li>
             <li>
               <a href=""><img src="../../../images/Activity.svg" alt="" /></a>
@@ -90,7 +90,8 @@
                   <i class="fa-regular fa-comment-dots"></i>
                 </div>
                 <div class="profile-img">
-                  <img src="../../../images/Rectangle 6368.svg" alt="" />
+                  <img id="second-image" src="" alt="Ikkinchi Rasm" style="display: none; object-fit: cover;">
+
                 </div>
               </div>
             </div>
@@ -103,22 +104,25 @@
           <div class="about-profile">
             <div class="foll__wrapper">
               <div class="followers">
-                <h1>2.5K</h1>
+                <h1 id="counter1">0</h1>
                 <span>FOLLOWERS</span>
               </div>
               <div class="following">
-                <h1>1.3k</h1>
+                <h1 id="counter2">1.3k</h1>
                 <span>FOLLOWING</span>
               </div>
               <div class="suporters">
-                <h1>653</h1>
+                <h1 id="counter3">653</h1>
                 <span>SUPPORTERS</span>
               </div>
             </div>
             <div class="profile-img__wrapper">
               <div class="pr-img">
-                <img src="../../../images/Rectangle 6368.svg" alt="" />
-                <button>+</button>
+                <button id="upload-button">+</button>
+    <input type="file" id="profile-image-input" accept="image/*" style="display: none;">
+    <br>
+    <img id="profile-image" src="" alt="Profil Rasmi" style="display: none; object-fit: cover;">
+    
               </div>
               <div class="about-user">
                 <div class="pr-name">
@@ -149,8 +153,8 @@
             <div class="lvl">
               <span>Level 2</span>
             </div>
-            <div class="dagre-btn__wrapper">
-              <button>80%</button>
+            <div class="dagre-btn__wrapper" id="container">
+              <button id="animate-button">5%</button>
             </div>
             <div class="pro-pass-btn">
               <button>Pro Pass</button>
@@ -207,10 +211,19 @@
                         src="./images/minecraft-logo-5EAD3A1535-seeklogo 1.svg"
                         alt=""
                       />
-                      <h1>Minecraft</h1> <i class="fa-solid fa-star"></i><span>4.9</span><p>(25)</p>
+                      <h1>Minecraft</h1>
+                      <i class="fa-solid fa-star"></i><span>4.9</span>
+                      <p>(25)</p>
                     </div>
                     <div class="game-text">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.  Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni ad minim veniam.</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incidi dunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor
+                        sit amet, consec tetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut
+                        eni ad minim veniam.
+                      </p>
                     </div>
                     <div class="price-box-and-order-btn">
                       <h1>Starting at $20</h1>
@@ -220,7 +233,9 @@
                 </div>
                 <div class="view-count__wrapper">
                   <div class="title-count">
-                    <h1>View count</h1><i class="fa-solid fa-star"></i><span>4.9</span><p>(25)</p>
+                    <h1>View count</h1>
+                    <i class="fa-solid fa-star"></i><span>4.9</span>
+                    <p>(25)</p>
                   </div>
                   <div class="stars__wrapper">
                     <div class="response-time">
@@ -257,19 +272,24 @@
                     </div>
                   </div>
                   <div class="account__wrapper">
-                   <div class="acc__box">
-                    <div class="accoun-circle-box">
-                      <h1>M</h1>
-                    </div>
-                    <div class="acc-name">
-                      <h1>mel23</h1>
-                      <div class="acc-star">
-                        <i class="fa-solid fa-star"></i> <span>3.4</span>
+                    <div class="acc__box">
+                      <div class="accoun-circle-box">
+                        <h1>M</h1>
+                      </div>
+                      <div class="acc-name">
+                        <h1>mel23</h1>
+                        <div class="acc-star">
+                          <i class="fa-solid fa-star"></i> <span>3.4</span>
+                        </div>
                       </div>
                     </div>
-                   </div>
                     <div class="acc-text">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus ad, quidem vitae veniam tenetur cumque culpa doloribus! Ratione animi a quis culpa error sequi et at quam vitae nihil.</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet ducimus ad, quidem vitae veniam tenetur cumque
+                        culpa doloribus! Ratione animi a quis culpa error sequi
+                        et at quam vitae nihil.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -283,15 +303,122 @@
               <h1>ALTERSKY</h1>
             </div>
             <div class="coin-img__wrapper">
-              <img src="./images/coin.svg" alt="">
+              <img src="./images/coin.svg" alt="" />
               <div class="order-pass-btn__wrapper">
-                <div class="order-box">
+                <div class="followers-box">
                   <button>Order</button>
                 </div>
-                <div class="pass-btn">
+                <div class="following-box">
                   <button>ProPass</button>
                 </div>
               </div>
+            </div>
+            <div class="altersky-quontity">
+              <div class="quontity-number">
+                <h1 id="counter4"></h1>
+              </div>
+              <div class="aside-order-pass-btn">
+                <div class="aside-order-btn">
+                  <button>Order</button>
+                </div>
+                <div class="aside-pass-btn">
+                  <button>ProPass</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="suggested-for-you__wrapper">
+            <div class="suggested__title">
+              <h1>Suggested For You</h1>
+              <a href="">See All</a>
+            </div>
+            <div class="follow-user__wrapper" >
+              <div class="flw-img">
+                <img src="./images/Faraz Tariq.svg" alt="" />
+                <div class="user-name">
+                  <h1>Faraz Tariq</h1>
+                  <br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <button>Follow</button>
+              </div>
+            </div>
+            <div class="follow-user__wrapper">
+              <div class="flw-img">
+                <img src="./images/Tina Tzoo.svg" alt="" />
+                <div class="user-name">
+                  <h1>Tina Tzoo</h1>
+                  <br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <button>Follow</button>
+              </div>
+            </div>
+            <div class="follow-user__wrapper">
+              <div class="flw-img">
+                <img src="./images/MKHBHD.svg" alt="" />
+                <div class="user-name">
+                  <h1>MKBHD</h1>
+                  <img src="./images/Shield-Done.svg" alt="" /><br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <button>Follow</button>
+              </div>
+            </div>
+          </div>
+          <div class="live-chat__wrapper">
+            <div class="chat__title">
+              <h1>Live Chat</h1>
+              <button>Add Group</button>
+            </div>
+            <div class="follow-user__wrapper">
+              <div class="flw-img">
+                <img src="./images/BigDaddy.svg" alt="" />
+                <div class="user-name">
+                  <h1>BigDaddy</h1>
+                  <br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <a href="">2h ago</a>
+              </div>
+            </div>
+            <div class="follow-user__wrapper">
+              <div class="flw-img">
+                <img src="./images/NoobPlayer69.svg" alt="" />
+                <div class="user-name">
+                  <h1>NoobPlayer69</h1>
+                  <br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <a href="">3h ago</a>
+              </div>
+            </div>
+            <div class="follow-user__wrapper">
+              <div class="flw-img">
+                <img src="./images/Mr Jarm.svg" alt="" />
+                <div class="user-name">
+                  <h1>Mr Jam</h1>
+                  <br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <a href="">6h ago</a>
+              </div>
+            </div>
+            <div class="send-message">
+              <input type="text" placeholder="Send Mesagge" />
+              <button><img src="./images/Send.svg" alt="" /></button>
             </div>
           </div>
         </aside>

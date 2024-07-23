@@ -90,6 +90,8 @@ body {
 
 button {
   cursor: pointer;
+  border: 0;
+  color: #fff;
 }
 
 header {
@@ -118,8 +120,8 @@ header .container {
 
 .home-page {
   width: 100%;
-  height: 200vh;
-  padding: 28px;
+  padding-bottom: 20px;
+  padding: 20px 0px 0px 15px;
   background: #1a1c26;
 }
 
@@ -128,17 +130,20 @@ header .container {
 }
 
 aside {
-  max-width: 300px;
-  width: 350px;
+  max-width: 347px;
+  width: 100%;
+  padding: 20px 15px 0;
   height: 100vh;
-  border-left: 1px solid #fff;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   position: sticky;
   top: 0;
   background: #1a1c26;
 }
 
 .profile__wrapper {
-  max-width: 100%;
+  width: 100%;
   height: 142px;
   margin: 0 auto;
   margin-top: 30px;
@@ -219,6 +224,7 @@ aside {
 .about-profile {
   display: flex;
   justify-content: space-between;
+  margin-left: -25px;
 }
 
 .followers {
@@ -320,6 +326,20 @@ aside {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.pr-img button {
+  width: 20px;
+  height: 20px;
+  top: 50px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  left: 50px;
+  position: absolute;
+  z-index: 3;
+}
+
 .pr-name {
   color: #fff;
 }
@@ -350,10 +370,13 @@ aside {
   border-radius: 6px;
   color: #fff;
 }
+.flw-btn button.active {
+  background-color: transparent;
+}
 
 .dagre-of-lvl {
   width: 100%;
-  padding: 160px 25px;
+  padding: 160px 0;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -364,20 +387,34 @@ aside {
 }
 
 .dagre-btn__wrapper {
-  width: 700px;
+  width: 600px;
   height: 30px;
   border-radius: 20px;
   background: rgb(73, 58, 101);
 }
 .dagre-btn__wrapper button {
-  width: 80%;
-  height: 100%;
   border-top-left-radius: 20px;
   border: 0;
   background: linear-gradient(90deg, #773fcf 0%, #5b23cb 100%);
   border-bottom-left-radius: 20px;
-  padding-left: 470px;
   color: rgb(255, 255, 255);
+  height: 100%;
+  width: 5px; /* Animatsiya boshlang'ich kengligi 5px */
+  position: absolute;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-size: 1em;
+  transition: width 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  width: 80%;
+  background-color: rgb(73, 58, 101);
+  position: relative;
 }
 
 .pro-pass-btn button {
@@ -687,34 +724,181 @@ aside {
   width: 100%;
   height: 200px;
   padding: 15px 20px;
-  border: 1px solid wheat;
+  background-color: rgb(39, 41, 50);
+  border-radius: 20px;
+}
+
+.aside__titile {
+  color: #fff;
+  font-size: 12px;
 }
 
 .coin-img__wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   padding-top: 20px;
-  padding-right: 20px;
 }
 
 .order-pass-btn__wrapper {
+  width: 100%;
   display: flex;
+  justify-content: center;
 }
 
-.order-box {
-  width: 70px;
+.followers-box {
   height: 40px;
   display: flex;
   justify-content: center;
+  padding-right: 17px;
   align-items: center;
-  border-right: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 248, 248, 0.4);
+}
+.followers-box button {
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(226, 226, 226);
+  background-color: transparent;
+  color: #fff;
 }
 
-.pass-btn {
-  width: 70px;
+.following-box {
   height: 40px;
-  padding-left: 13px;
   display: flex;
+  padding-left: 17px;
   justify-content: center;
   align-items: center;
+}
+.following-box button {
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(226, 226, 226);
+  background-color: transparent;
+  color: #fff;
+}
+
+.altersky-quontity {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quontity-number {
+  color: #fff;
+}
+
+.aside-order-pass-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.aside-order-btn button,
+.aside-pass-btn button {
+  padding: 7px 20px;
+  background: linear-gradient(180deg, #7940cf 0%, #5921cb 100%);
+  border-radius: 6px;
+}
+
+.suggested-for-you__wrapper {
+  padding: 50px 20px;
+  padding-bottom: 40px;
+}
+
+.suggested__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.suggested__title h1 {
+  font-size: 13px;
+}
+.suggested__title a {
+  font-size: 13px;
+  color: #fff;
+}
+
+.follow-user__wrapper {
+  padding: 5px 0;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flw-img {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.flw-img .user-name {
+  padding-top: 10px;
+}
+.flw-img .user-name h1 {
+  font-size: 13px;
+  color: #fff;
+  display: inline;
+}
+.flw-img .user-name img {
+  margin-left: 5px;
+}
+.flw-img .user-name span {
+  color: rgb(127, 127, 127);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.active-followers-btn button {
+  padding: 6px 20px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #7940cf 0%, #5921cb 100%);
+}
+.active-followers-btn a {
+  font-size: 13px;
+  color: rgb(143, 143, 143);
+}
+
+.live-chat__wrapper {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: rgb(39, 41, 50);
+}
+
+.chat__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+}
+.chat__title button {
+  padding: 7px 20px;
+  border-radius: 6px;
+  color: rgb(140, 103, 246);
+  background-color: transparent;
+  border: 1px solid rgb(140, 103, 246);
+}
+
+.send-message {
+  margin-top: 20px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: rgb(26, 28, 38);
+}
+.send-message input {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+.send-message button {
+  padding: 5px 7px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(140, 103, 246);
 }/*# sourceMappingURL=style.css.map */
