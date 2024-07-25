@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0;
+  }
+  ul li {
+    list-style: none;
+  }
+  header {
+    width: 100px;
+    height: 100vh;
+    background-color: rgba(39, 41, 50, 1);
+  }
+  .logo__wrapper {
+      padding-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .header-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .logo__wrapper a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Bakbak One", sans-serif;
+  }
+  .logout{
+      width: 40%;
+      padding-top: 35px;
+      border-top: 0.5px solid rgba(143, 143, 143, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+  }
+  img {
+    width: 17px;
+  }
+  .header-menu li a img{
+      transition: 0.3s;
+  }
+  .header-menu li a img:hover{
+      padding-left: 10px;
+  }
