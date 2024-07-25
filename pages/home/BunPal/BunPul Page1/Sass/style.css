@@ -134,8 +134,143 @@ header {
   bottom: 20px;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #1a1c26;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
+  color: white;
+}
+
+.search__wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-icon {
+  width: 426px;
+  height: 42px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  background-color: rgb(39, 41, 50);
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.fa-magnifying-glass {
+  color: rgb(143, 143, 143);
+}
+
+.search-icon input {
+  width: 400px;
+  padding: 5px;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
+
+.profile-issue {
+  display: flex;
+  gap: 10px;
+}
+
+.notification-icon,
+.message-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 20px;
+  opacity: 0px;
+  background-color: #272932;
+  color: #8F8F8F;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-profile {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -25px;
+}
+
+.followers {
+  padding-left: 25px;
+}
+
+.following,
+.suporters {
+  border-left: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+}
+.following h1,
+.suporters h1 {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.following span,
+.suporters span {
+  font-size: 11px;
+  color: rgb(143, 143, 143);
+  font-weight: 400;
+}
+
+.followers h1 {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.followers span {
+  font-size: 11px;
+  color: rgb(143, 143, 143);
+  font-weight: 400;
+}
+
+.profile-img {
+  width: 53px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.infoheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoheader_div2_button {
+  width: 119px;
+  height: 38px;
+  border-radius: 6px;
+  border: 1px;
+  opacity: 0px;
+  background-color: #1a1c26;
+  color: white;
+  border: 1px solid #FAFAFA;
+}
+
+.infoheader_h1 {
+  font-family: "Bakbak One", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
   color: white;
 }
 
@@ -143,6 +278,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 10px 15px;
 }
 
 .buttons {
@@ -172,8 +308,6 @@ a {
 .main_buttons2 {
   width: 148px;
   height: 42px;
-  gap: 0px;
-  border: none;
   opacity: 0px;
   background-color: #272932;
   color: white;
@@ -183,13 +317,14 @@ a {
   line-height: 22.1px;
   text-align: left;
   text-align: center;
+  border-radius: 8px;
 }
 
 .main_buttons3 {
   width: 191px;
   height: 42px;
   gap: 0px;
-  border-radius: 8px 0px 0px 0px;
+  border-radius: 8px 8px 8px 8px;
   opacity: 0px;
   border: none;
   opacity: 0px;
@@ -212,11 +347,9 @@ a {
 }
 
 .Elements_cart1 {
-  width: 233px;
-  height: 311px;
-  gap: 0px;
+  max-width: 233px;
+  max-height: 331px;
   border-radius: 20px;
-  opacity: 0px;
   background-color: #272932;
 }
 
@@ -251,10 +384,6 @@ a {
 }
 
 .Elements_cart1_p3 {
-  width: 218px;
-  height: 53px;
-  gap: 0px;
-  opacity: 0px;
   font-family: "Montserrat", sans-serif;
   font-size: 8px;
   font-weight: 400;
@@ -291,15 +420,13 @@ a {
 }
 
 .project_accaunt {
-  width: 100%;
+  width: 347px;
 }
 
 .project_accaunt_cart1 {
   width: 100%;
   height: 217px;
-  gap: 0px;
   border-radius: 20px;
-  opacity: 0px;
   background-color: #272932;
   margin: 20px;
   padding: 10px 20px;
@@ -437,11 +564,16 @@ a {
 .project_accaunt_cart2_div2_follow_button {
   width: 71px;
   height: 30px;
-  border-radius: 6px 0px 0px 0px;
   opacity: 0px;
   background-color: #7940CF;
   background-image: linear-gradient(0deg, #7940CF, #5921CB);
   color: white;
+}
+
+.project_accaunt_cart2_div2_profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project_accaunt_cart2_div2_profil_p1 {
@@ -489,9 +621,10 @@ a {
   display: none;
 }
 
-.project_accaunt_cart3_div1 {
+.project_accaunt_cart3_div1, .project_accaunt_cart2_div2_profil {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .project_accaunt_cart3_div1_p1 {
@@ -533,6 +666,34 @@ a {
   line-height: 16px;
   text-align: left;
   color: white;
+  margin-right: 26px;
+}
+
+.project_accaunt_cart_Add_input {
+  width: 100%;
+  height: 51px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #1A1C26;
+  color: #8F8F8F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  border: none;
+  margin-top: 31px;
+}
+
+.project_accaunt_cart_Add_input_button {
+  width: 32px;
+  height: 30px;
+  border-radius: 4px 4px 4px 4px;
+  opacity: 0px;
+  background-color: #8C67F6;
+  color: #272932;
+  position: relative;
+  bottom: 40px;
+  left: 300px;
 }
 
 @media screen and (max-width: 1444px) {
