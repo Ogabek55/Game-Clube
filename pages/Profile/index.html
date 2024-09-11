@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
+  </head>
+  <body>
+    <header class="left-header">
+      <div class="container">
+        <div class="logo__wrapper">
+          <a href="">LOGO</a>
+        </div>
+        <div class="header-item">
+          <ul class="header-menu">
+            <li>
+              <a href=""><img src="../../../images/Home.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../../../images/Game.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="../BunPal/inde.html"><img src="../../../images/Chart.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../../../images/Activity.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../../../images/Frame.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../../../images/Group.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../../../images/Profile.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../../../images/Frame (2).svg" alt="" /></a>
+            </li>
+            <div class="logout">
+              <li>
+                <a href=""><img src="../../../images/Setting.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="../../../images/Logout.svg" alt="" /></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="main-page__wrapper">
+      <div class="container">
+        <section class="home-page">
+          <div class="top-search-item">
+            <div class="search__wrapper">
+              <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search" />
+              </div>
+              <div class="profile-issue">
+                <div class="notification-icon">
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="message-icon">
+                  <i class="fa-regular fa-comment-dots"></i>
+                </div>
+                <div class="profile-img">
+                  <img id="second-image" src="" alt="Ikkinchi Rasm" style="display: none; object-fit: cover;">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile__wrapper">
+            <div class="link-icon">
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+          <div class="about-profile">
+            <div class="foll__wrapper">
+              <div class="followers">
+                <h1 id="counter1">0</h1>
+                <span>FOLLOWERS</span>
+              </div>
+              <div class="following">
+                <h1 id="counter2">1.3k</h1>
+                <span>FOLLOWING</span>
+              </div>
+              <div class="suporters">
+                <h1 id="counter3">653</h1>
+                <span>SUPPORTERS</span>
+              </div>
+            </div>
+            <div class="profile-img__wrapper">
+              <div class="pr-img">
+                <button id="upload-button">+</button>
+    <input type="file" id="profile-image-input" accept="image/*" style="display: none;">
+    <br>
+    <img id="profile-image" src="" alt="Profil Rasmi" style="display: none; object-fit: cover;">
+    
+              </div>
+              <div class="about-user">
+                <div class="pr-name">
+                  <h1>Edwerd Evans</h1>
+                  <div class="pr-link">
+                    <a href="">@evans99</a>
+                  </div>
+                </div>
+                <div class="flw-btn">
+                  <button>Subscribe</button>
+                  <button>Follow</button>
+                  <button>Message</button>
+                </div>
+              </div>
+            </div>
+            <div class="profile-text">
+              <div class="pr-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur reiciendis recusandae sint labore, sit est
+                  possimus nisi aspernatur quidem obcaecati laborum porro et
+                  explicabo. Delectus unde eum beatae illum quidem?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dagre-of-lvl">
+            <div class="lvl">
+              <span>Level 2</span>
+            </div>
+            <div class="dagre-btn__wrapper" id="container">
+              <button id="animate-button">5%</button>
+            </div>
+            <div class="pro-pass-btn">
+              <button>Pro Pass</button>
+            </div>
+          </div>
+          <div
+            class="post-card__wrapper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div class="content-box">
+              <div class="content-btn">
+                <button class="nav-button active" data-tab="tab1">
+                  <i class="fa-solid fa-image"></i> POSTS
+                  <div class="underline active"></div>
+                </button>
+                <button class="nav-button" data-tab="tab2">
+                  <i class="fa-solid fa-bookmark"></i> GIGS
+                  <div class="underline"></div>
+                </button>
+              </div>
+              <button class="create-gig-btn">Create Gig</button>
+            </div>
+            <div id="tab1" class="tab active">
+              <div class="content-1">
+                <div class="rectangle-img">
+                  <div class="game-of-info">
+                    <img src="../../../images/Rectangle 6368.svg" alt="" />
+                    <p>
+                      What you need to do for this is very simple. Register and
+                      click the Become a Creator button. Making money is not far
+                      off. Come on, be a creator.
+                    </p>
+                  </div>
+                  <div class="three-dote">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
+                <div class="main-img-of-contend">
+                  <img src="./images/Mask Group.png" alt="" />
+                  <button>Valheim</button>
+                </div>
+              </div>
+            </div>
+            <div id="tab2" class="tab">
+              <div class="contend-2__wrapper">
+                <div class="content-box-2">
+                  <div class="minecraft-img">
+                    <img src="./images/Minecraft.svg" alt="" />
+                  </div>
+                  <div class="about-minecraft">
+                    <div class="mincraft-icon">
+                      <img
+                        src="./images/minecraft-logo-5EAD3A1535-seeklogo 1.svg"
+                        alt=""
+                      />
+                      <h1>Minecraft</h1>
+                      <i class="fa-solid fa-star"></i><span>4.9</span>
+                      <p>(25)</p>
+                    </div>
+                    <div class="game-text">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incidi dunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor
+                        sit amet, consec tetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut
+                        eni ad minim veniam.
+                      </p>
+                    </div>
+                    <div class="price-box-and-order-btn">
+                      <h1>Starting at $20</h1>
+                      <button>Order</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="view-count__wrapper">
+                  <div class="title-count">
+                    <h1>View count</h1>
+                    <i class="fa-solid fa-star"></i><span>4.9</span>
+                    <p>(25)</p>
+                  </div>
+                  <div class="stars__wrapper">
+                    <div class="response-time">
+                      <h1>Responce time</h1>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i> <span>5.1</span>
+                    </div>
+                    <div class="friendliness">
+                      <h1>Friendliness</h1>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i> <span>5.1</span>
+                    </div>
+                    <div class="performance">
+                      <h1>Performance</h1>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i> <span>5.1</span>
+                    </div>
+                    <div class="satisfaction">
+                      <h1>Satisfaction</h1>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i> <span>5.1</span>
+                    </div>
+                  </div>
+                  <div class="account__wrapper">
+                    <div class="acc__box">
+                      <div class="accoun-circle-box">
+                        <h1>M</h1>
+                      </div>
+                      <div class="acc-name">
+                        <h1>mel23</h1>
+                        <div class="acc-star">
+                          <i class="fa-solid fa-star"></i> <span>3.4</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="acc-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet ducimus ad, quidem vitae veniam tenetur cumque
+                        culpa doloribus! Ratione animi a quis culpa error sequi
+                        et at quam vitae nihil.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <aside>
+          <div class="altersky__wrapper">
+            <div class="aside__titile">
+              <h1>ALTERSKY</h1>
+            </div>
+            <div class="coin-img__wrapper">
+              <img src="./images/coin.svg" alt="" />
+              <div class="order-pass-btn__wrapper">
+                <div class="followers-box">
+                  <button>Order</button>
+                </div>
+                <div class="following-box">
+                  <button>ProPass</button>
+                </div>
+              </div>
+            </div>
+            <div class="altersky-quontity">
+              <div class="quontity-number">
+                <h1 id="counter4"></h1>
+              </div>
+              <div class="aside-order-pass-btn">
+                <div class="aside-order-btn">
+                  <button>Order</button>
+                </div>
+                <div class="aside-pass-btn">
+                  <button>ProPass</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="suggested-for-you__wrapper">
+            <div class="suggested__title">
+              <h1>Suggested For You</h1>
+              <a href="">See All</a>
+            </div>
+            <div class="follow-user__wrapper" >
+              <div class="flw-img">
+                <img src="./images/Faraz Tariq.svg" alt="" />
+                <div class="user-name">
+                  <h1>Faraz Tariq</h1>
+                  <br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <button>Follow</button>
+              </div>
+            </div>
+            <div class="follow-user__wrapper">
+              <div class="flw-img">
+                <img src="./images/Tina Tzoo.svg" alt="" />
+                <div class="user-name">
+                  <h1>Tina Tzoo</h1>
+                  <br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <button>Follow</button>
+              </div>
+            </div>
+            <div class="follow-user__wrapper">
+              <div class="flw-img">
+                <img src="./images/MKHBHD.svg" alt="" />
+                <div class="user-name">
+                  <h1>MKBHD</h1>
+                  <img src="./images/Shield-Done.svg" alt="" /><br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <button>Follow</button>
+              </div>
+            </div>
+          </div>
+          <div class="live-chat__wrapper">
+            <div class="chat__title">
+              <h1>Live Chat</h1>
+              <button>Add Group</button>
+            </div>
+            <div class="follow-user__wrapper">
+              <div class="flw-img">
+                <img src="./images/BigDaddy.svg" alt="" />
+                <div class="user-name">
+                  <h1>BigDaddy</h1>
+                  <br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <a href="">2h ago</a>
+              </div>
+            </div>
+            <div class="follow-user__wrapper">
+              <div class="flw-img">
+                <img src="./images/NoobPlayer69.svg" alt="" />
+                <div class="user-name">
+                  <h1>NoobPlayer69</h1>
+                  <br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <a href="">3h ago</a>
+              </div>
+            </div>
+            <div class="follow-user__wrapper">
+              <div class="flw-img">
+                <img src="./images/Mr Jarm.svg" alt="" />
+                <div class="user-name">
+                  <h1>Mr Jam</h1>
+                  <br />
+                  <span>Super Active</span>
+                </div>
+              </div>
+              <div class="active-followers-btn">
+                <a href="">6h ago</a>
+              </div>
+            </div>
+            <div class="send-message">
+              <input type="text" placeholder="Send Mesagge" />
+              <button><img src="./images/Send.svg" alt="" /></button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <script src="./tap.js"></script>
+  </body>
+</html>
