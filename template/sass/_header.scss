@@ -45,6 +45,12 @@ body {
       align-items: center;
       gap: 25px;
   }
-  .header-menu li a img{
+  img {
     width: 17px;
+  }
+  .header-menu li a img{
+      transition: 0.3s;
+  }
+  .header-menu li a img:hover{
+      padding-left: 10px;
   }
